@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-test3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/12/test3/" class="article-date">
+  <time class="dt-published" datetime="2022-04-12T11:53:48.000Z" itemprop="datePublished">2022-04-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/04/12/test3/">test3</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><em>第一次做博客，记录一下！^**^</em></p>
+<h1 id="Python-基础操作"><a href="#Python-基础操作" class="headerlink" title="Python 基础操作"></a>Python 基础操作</h1><h2 id="文件保存"><a href="#文件保存" class="headerlink" title="文件保存"></a>文件保存</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#fits保存</span></span><br><span class="line">HUDL.writeto(<span class="string">r&quot;D:/A_Postgraduate/segment/&quot;</span>+<span class="string">&quot;/&quot;</span>+<span class="string">&#x27;new_img&#123;&#125;.fits&#x27;</span>.<span class="built_in">format</span>(m)) <span class="comment">#format 命名不同的文件名</span></span><br><span class="line"><span class="comment">#非fits保存</span></span><br><span class="line">cv2.imwrite(<span class="string">r&quot;D:/Postgraduate/den2/add_noise/TV/w_0.06/&quot;</span>+<span class="string">&quot;/&quot;</span>+filename,den_img*<span class="number">255</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#MSE(均方差)</span></span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error</span><br><span class="line">mean_squard_error(y_test,y_predict)</span><br><span class="line"><span class="comment">#MAE(平均绝对误差)</span></span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_absolute_error</span><br><span class="line">mean_absolute_error(y_test,y_predict)</span><br><span class="line"><span class="comment">#PSNR(峰值信噪比)</span></span><br><span class="line"><span class="keyword">from</span> skimage.metrics <span class="keyword">import</span> peak_signal_noise_ratio</span><br><span class="line">peak_signal_noise_ratio(y_test,y_predict)</span><br></pre></td></tr></table></figure>
+
+<h2 id="图像-x2F-数组处理"><a href="#图像-x2F-数组处理" class="headerlink" title="图像&#x2F;数组处理"></a>图像&#x2F;数组处理</h2><h3 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将图像切成30*30</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">30</span>,<span class="number">1286</span>,<span class="number">30</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">30</span> ,<span class="number">1286</span> ,<span class="number">30</span>):</span><br><span class="line">        new_img = img[j-<span class="number">30</span>:j,i-<span class="number">30</span>:i]</span><br><span class="line">        </span><br></pre></td></tr></table></figure>
+
+<h3 id="数组转置"><a href="#数组转置" class="headerlink" title="数组转置"></a>数组转置</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">array=np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">6</span>]])</span><br><span class="line"><span class="built_in">print</span>(array)</span><br><span class="line"><span class="built_in">print</span>(array.T)</span><br></pre></td></tr></table></figure>
+
+<h3 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h3><h2 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h2><h3 id="删除数组中的某一列或者某一行"><a href="#删除数组中的某一列或者某一行" class="headerlink" title="删除数组中的某一列或者某一行"></a>删除数组中的某一列或者某一行</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">array=np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">6</span>]])</span><br><span class="line"><span class="built_in">print</span>(array)</span><br><span class="line">array = np.delete(array,<span class="number">2</span>,axis=<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(array)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">输出</span></span><br><span class="line"><span class="string">[[1 2 3 4]</span></span><br><span class="line"><span class="string"> [9 8 7 6]]</span></span><br><span class="line"><span class="string">[[1 2 4]</span></span><br><span class="line"><span class="string"> [9 8 6]]</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="plt"><a href="#plt" class="headerlink" title="plt"></a>plt</h2><h3 id="axis"><a href="#axis" class="headerlink" title="axis"></a>axis</h3><h2 id="类中的super"><a href="#类中的super" class="headerlink" title="类中的super"></a>类中的super</h2><p><code>super</code>中的获取的是继承顺序中的下一个类。以下面的继承方式为例：</p>
+<p><img src="C:\Users\25407\Desktop\2021-11-26_204730.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">继承方式</span></span><br><span class="line"><span class="string">  Base</span></span><br><span class="line"><span class="string">  /  \</span></span><br><span class="line"><span class="string"> /    \</span></span><br><span class="line"><span class="string">A      B</span></span><br><span class="line"><span class="string"> \    /</span></span><br><span class="line"><span class="string">  \  /</span></span><br><span class="line"><span class="string">   C</span></span><br><span class="line"><span class="string">   </span></span><br><span class="line"><span class="string">程序运行顺序 </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">43-&gt;39-&gt;40 	</span></span><br><span class="line"><span class="string">-&gt;27-&gt;28  	</span></span><br><span class="line"><span class="string">-&gt;33-&gt;34	</span></span><br><span class="line"><span class="string">-&gt;22-&gt;23</span></span><br><span class="line"><span class="string">-&gt;34-&gt;35</span></span><br><span class="line"><span class="string">-&gt;28-&gt;29</span></span><br><span class="line"><span class="string">-&gt;40-&gt;41-&gt;43</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 测试结果</span></span><br><span class="line">enter C</span><br><span class="line">enter A</span><br><span class="line">enter B</span><br><span class="line">enter Base</span><br><span class="line">leave Base</span><br><span class="line">leave B</span><br><span class="line">leave A</span><br><span class="line">leave C</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h1 id="Torch"><a href="#Torch" class="headerlink" title="Torch"></a>Torch</h1><h2 id="tensor"><a href="#tensor" class="headerlink" title="tensor"></a>tensor</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">y = torch.randn(<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(y)</span><br><span class="line"><span class="built_in">print</span>(y.item()) <span class="comment">#item将张量转换为标量(只有一个元素张量的才可以转换）</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">输出结果</span></span><br><span class="line"><span class="string">tensor([0.1893])</span></span><br><span class="line"><span class="string">0.18931446969509125</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="tensor-拼接"><a href="#tensor-拼接" class="headerlink" title="tensor 拼接"></a>tensor 拼接</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">A = torch.arange(<span class="number">15</span>).reshape(<span class="number">5</span>,<span class="number">3</span>)</span><br><span class="line"><span class="built_in">print</span>(A)</span><br><span class="line">B = torch.arange(<span class="number">3</span>,<span class="number">18</span>).reshape(<span class="number">5</span>,<span class="number">3</span>)</span><br><span class="line"><span class="built_in">print</span>(B)</span><br><span class="line">CAT = torch.cat((A[<span class="number">0</span>:<span class="number">2</span>,:],A,B),dim=<span class="number">0</span>) <span class="comment"># cat 在原来的维度上连接张量 dim=0 行</span></span><br><span class="line"><span class="built_in">print</span>(CAT)</span><br><span class="line"><span class="built_in">print</span>(CAT.shape)</span><br><span class="line">STACK = torch.stack((A,B),dim=<span class="number">0</span>) <span class="comment"># stack 沿新维度连接张量</span></span><br><span class="line"><span class="built_in">print</span>(STACK)</span><br><span class="line"><span class="built_in">print</span>(STACK.shape)</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">dim=0 行</span></span><br><span class="line"><span class="string">dim=1 列</span></span><br><span class="line"><span class="string">输出结果</span></span><br><span class="line"><span class="string">tensor([[0, 1, 2],</span></span><br><span class="line"><span class="string">        [3, 4, 5],</span></span><br><span class="line"><span class="string">        [6, 7, 8]])</span></span><br><span class="line"><span class="string">tensor([[ 3,  4,  5],</span></span><br><span class="line"><span class="string">        [ 6,  7,  8],</span></span><br><span class="line"><span class="string">        [ 9, 10, 11]])</span></span><br><span class="line"><span class="string">tensor([[ 0,  1,  0,  1,  2,  3,  4,  5],</span></span><br><span class="line"><span class="string">        [ 3,  4,  3,  4,  5,  6,  7,  8],</span></span><br><span class="line"><span class="string">        [ 6,  7,  6,  7,  8,  9, 10, 11]])</span></span><br><span class="line"><span class="string">torch.Size([3, 8])</span></span><br><span class="line"><span class="string">tensor([[[ 0,  1,  2],</span></span><br><span class="line"><span class="string">         [ 3,  4,  5]],</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        [[ 3,  4,  5],</span></span><br><span class="line"><span class="string">         [ 6,  7,  8]],</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        [[ 6,  7,  8],</span></span><br><span class="line"><span class="string">         [ 9, 10, 11]]])</span></span><br><span class="line"><span class="string">torch.Size([3, 2, 3])</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="tensor-计算"><a href="#tensor-计算" class="headerlink" title="tensor 计算"></a>tensor 计算</h2><h2 id="dim"><a href="#dim" class="headerlink" title="dim"></a>dim</h2><ul>
+<li><p><code>dim = 0</code>，列不变（按列-将当前列所有行数据-计算），指定的是行，那就是行变<strong>，理解成：</strong>针对每一列中，所有行之间的数据比较或者求和等操作**，是每一行的比较，因为行是可变的。</p>
+</li>
+<li><p><code>dim = 1</code>，行不变（按行-将当前行所有列数据-计算），指定的是列，那就是列变<strong>，理解成：</strong>针对每一行中，所有列之间的数据比较或者求和等操作**，是每一行的比较，因为行是可变的[1]:。</p>
+<p><strong>例子说明</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">B = torch.linspace(<span class="number">10</span>,<span class="number">20</span>,steps=<span class="number">6</span>).reshape(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;B=:&#x27;</span>,B)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;每一列的均值\t&#x27;</span>,torch.mean(B,dim=<span class="number">0</span>,keepdim=<span class="literal">True</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;每一行的均值\n&#x27;</span>,torch.mean(B,dim=<span class="number">1</span>,keepdim=<span class="literal">True</span>))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;每一列的和\t&#x27;</span>,torch.<span class="built_in">sum</span>(B,dim=<span class="number">0</span>,keepdim=<span class="literal">True</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;每一行的和\n&#x27;</span>,torch.<span class="built_in">sum</span>(B,dim=<span class="number">1</span>,keepdim=<span class="literal">True</span>))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;对列进行累加\t&#x27;</span>,torch.cumsum(B,dim=<span class="number">0</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;对行进行累加\n&#x27;</span>,torch.cumsum(B,dim=<span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;每一列的乘积\t&#x27;</span>,torch.prod(B,dim=<span class="number">0</span>,keepdim=<span class="literal">True</span>))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;每一列的累积乘积\t&#x27;</span>,torch.cumprod(B,dim=<span class="number">0</span>))</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">输出结果</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">B=: tensor([[10., 12., 14.],</span></span><br><span class="line"><span class="string">        [16., 18., 20.]])</span></span><br><span class="line"><span class="string">每一列的均值	 tensor([[13., 15., 17.]])</span></span><br><span class="line"><span class="string">每一行的均值</span></span><br><span class="line"><span class="string"> tensor([[12.],</span></span><br><span class="line"><span class="string">        [18.]])</span></span><br><span class="line"><span class="string">每一列的和	 tensor([[26., 30., 34.]])</span></span><br><span class="line"><span class="string">每一行的和</span></span><br><span class="line"><span class="string"> tensor([[36.],</span></span><br><span class="line"><span class="string">        [54.]])</span></span><br><span class="line"><span class="string">对列进行累加	 tensor([[10., 12., 14.],</span></span><br><span class="line"><span class="string">        [26., 30., 34.]])</span></span><br><span class="line"><span class="string">对行进行累加</span></span><br><span class="line"><span class="string"> tensor([[10., 22., 36.],</span></span><br><span class="line"><span class="string">        [16., 34., 54.]])</span></span><br><span class="line"><span class="string">每一列的乘积	 tensor([[160., 216., 280.]])</span></span><br><span class="line"><span class="string">每一列的累积乘积	 tensor([[ 10.,  12.,  14.],</span></span><br><span class="line"><span class="string">        [160., 216., 280.]])</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="torch-nn-Conv2d"><a href="#torch-nn-Conv2d" class="headerlink" title="torch.nn.Conv2d"></a>torch.nn.Conv2d</h2><p><code>torch.nn.Conv2d(in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, groups=1, bias=True)</code></p>
+<h5 id="参数dilation——扩张卷积（也叫空洞卷积）"><a href="#参数dilation——扩张卷积（也叫空洞卷积）" class="headerlink" title="参数dilation——扩张卷积（也叫空洞卷积）"></a>参数dilation——扩张卷积（也叫空洞卷积）</h5><p><img src="https://img-blog.csdnimg.cn/20200709215036409.png"></p>
+</li>
+</ul>
+<h2 id="transforms-ToTensor和transforms-Normalize的理解"><a href="#transforms-ToTensor和transforms-Normalize的理解" class="headerlink" title="transforms.ToTensor和transforms.Normalize的理解"></a>transforms.ToTensor和transforms.Normalize的理解</h2><p>对RGB图片而言，数据范围是[0-255]的，需要先经过ToTensor（除以255）归一化到[0,1]之后，再通过Normalize计算过后，将数据归一化到[-1,1]。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/12/test3/" data-id="cl24poh860001wct60l1l17jd" data-title="test3" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/12/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2022-04-12T06:16:17.857Z" itemprop="datePublished">2022-04-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/04/12/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/12/hello-world/" data-id="cl24poh810000wct6f2ku3bj8" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/04/12/test3/">test3</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/12/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
